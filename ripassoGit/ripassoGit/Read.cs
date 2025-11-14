@@ -14,7 +14,7 @@ namespace ripassoGit
             this.path = path;
         }
         
-        public void Leggi()
+        public void Leggi(string path)
         {
             using (StreamReader reader = new StreamReader(path))
             {

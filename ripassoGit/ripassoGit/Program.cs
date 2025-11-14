@@ -6,13 +6,13 @@ namespace ripassoGit
         static string path = "file.txt";
         static void Main(string[] args)
         {
-            Read read = new Read();
-            Write write = new Write();
+            Read read = new Read(path);
+            Write write = new Write(path);
             Console.WriteLine("Inserisci un messaggio da scrivere nel file");
             string message = Console.ReadLine();
             write.Scrivi(message);
             Console.WriteLine("Contenuto del file:");
-            read.Leggi();
+            read.Leggi(path);
 
         }
     }
