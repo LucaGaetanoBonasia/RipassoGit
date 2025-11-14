@@ -13,6 +13,7 @@ namespace ripassoGit
             write.Scrivi(message);
             Console.WriteLine("Contenuto del file:");
             read.Leggi(path);
+            //ciao
 
         }
     }
